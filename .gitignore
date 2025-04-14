@@ -1,0 +1,21 @@
+# Archivos de Visual Studio
+.vs/
+.vscode/
+.idea/
+node_modules/
+
+# Archivos de configuración del proyecto
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Archivos de build
+bin/
+obj/
+
+# Archivos de dependencias de NuGet
+packages/
+
+# Archivos de log
+*.log
