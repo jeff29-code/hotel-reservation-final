@@ -1,0 +1,110 @@
+.main-container {
+    background: linear-gradient(to bottom, #3a6ea5, #1b3c73);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .search-section, .recommendations-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-grid, .recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .search-item, .recommendation-item {
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .search-item img, .recommendation-item img {
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho del contenedor */
+    height: 250px; /* Ajusta la altura fija para que todas sean iguales */
+    object-fit: cover; /* Recorta la imagen para que mantenga proporción */
+    border-radius: 10px; /* Bordes redondeados opcional */
+  }
+  
+  .search-item:hover, .recommendation-item:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .search-grid, .recommendations-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-grid, .recommendations-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.producto-card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.random-section {
+  margin: 40px 0;
+}
+
+.random-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 20px;
+}
+
+.random-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
